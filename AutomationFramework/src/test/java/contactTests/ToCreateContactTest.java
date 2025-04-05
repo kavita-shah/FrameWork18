@@ -32,6 +32,7 @@ public class ToCreateContactTest extends BascClass {
 		Assert.fail();
 		ContactInfoPage cip = new ContactInfoPage(driver);
 		String name = cip.getContactInfo().getText();
+		System.out.println("================");
 
 		// we use assert isted of doing if else condition
 		Assert.assertTrue(name.contains(LASTNAME));
